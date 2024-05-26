@@ -4,5 +4,6 @@
     <string name="categorias">Categorias</string>
     <string name="rap">RAP</string>
     <string name="now_playing">Now playing</string>
+    <string name="reproduciendo">Reproduciendo:</string>
 
 </resources>

@@ -15,7 +15,7 @@ class SongsListActivity : AppCompatActivity() {
         lateinit var category: Category
     }
     private lateinit var  binding: ActivitySongsListBinding
-    private lateinit var  songsListAdapter: SongsListAdapter
+    private lateinit var  songsListAdapter:  SongsListAdapter
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
          binding= ActivitySongsListBinding.inflate(layoutInflater)

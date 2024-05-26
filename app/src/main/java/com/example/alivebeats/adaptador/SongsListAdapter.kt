@@ -1,7 +1,6 @@
 package com.example.alivebeats.adaptador
 
 import android.content.Intent
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
@@ -10,7 +9,6 @@ import com.bumptech.glide.load.resource.bitmap.RoundedCorners
 import com.bumptech.glide.request.RequestOptions
 import com.example.alivebeats.MyExoPlayer
 import com.example.alivebeats.PlayerActivity
-import com.example.alivebeats.SongsListActivity
 import com.example.alivebeats.databinding.ListaCancionesRecyclerRowBinding
 import com.example.alivebeats.modelo.Song
 import com.google.firebase.firestore.FirebaseFirestore
@@ -47,11 +45,13 @@ class SongsListAdapter(private val songIdList: List<String>):
         return MyViewHolder(binding)
     }
 
+    override fun onBindViewHolder(holder: SongsListAdapter.MyViewHolder, position: Int) {
+        holder.bindData(songIdList[position])
+    }
+
     override fun getItemCount(): Int {
       return  songIdList.size
     }
 
-    override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
-    holder.bindData(songIdList[position])
-    }
+
 }
