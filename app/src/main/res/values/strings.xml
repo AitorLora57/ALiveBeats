@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ALiveBeats</string>
+    <string name="Bienvenida">Bienvenido de nuevo</string>
+    <string name="categorias">Categorias</string>
+    <string name="rap">RAP</string>
+    <string name="now_playing">Now playing</string>
+
+</resources>

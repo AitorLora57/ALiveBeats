@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "315828465153",
+    "project_id": "alivebeats-6103f",
+    "storage_bucket": "alivebeats-6103f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:315828465153:android:f713f246264d418f881a00",
+        "android_client_info": {
+          "package_name": "com.example.alivebeats"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAkqJPckGl61wDMQJlyMxD9gLzb-8F2G98"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
