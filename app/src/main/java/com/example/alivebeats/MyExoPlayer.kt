@@ -4,6 +4,7 @@ import android.content.Context
 import androidx.media3.common.MediaItem
 import androidx.media3.exoplayer.ExoPlayer
 import com.example.alivebeats.modelo.Song
+import com.google.firebase.firestore.FirebaseFirestore
 
 object MyExoPlayer {
     private var exoPlayer: ExoPlayer? = null
@@ -24,7 +25,7 @@ object MyExoPlayer {
 
         if(currentSong!=song){
             currentSong= song
-
+            updateCount()
 
             currentSong?.url?.apply {
 
@@ -37,5 +38,27 @@ object MyExoPlayer {
         }
 
         }
+    }
+
+    fun updateCount(){
+
+        currentSong?.id?.let {id->
+            FirebaseFirestore.getInstance().collection("songs")
+                .document(id)
+                .get().addOnSuccessListener {
+                    var latestCount = it.getLong("count")
+                    if(latestCount==null){
+                        latestCount = 1L
+                    }else{
+                        latestCount = latestCount+1
+                    }
+                    FirebaseFirestore.getInstance().collection("songs")
+                        .document(id)
+                        .update(mapOf("count" to latestCount))
+
+                }
+
+        }
+
     }
 }

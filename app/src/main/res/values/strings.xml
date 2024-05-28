@@ -3,7 +3,16 @@
     <string name="Bienvenida">Bienvenido de nuevo</string>
     <string name="categorias">Categorias</string>
     <string name="rap">RAP</string>
-    <string name="now_playing">Now playing</string>
+    <string name="now_playing">Reproduciendo</string>
     <string name="reproduciendo">Reproduciendo:</string>
+    <string name="bienvenida">Sumérgete en la música con ALiveBeats</string>
+    <string name="correo_electr_nico">Correo electrónico</string>
+    <string name="contraseña">Contreseña</string>
+    <string name="confirmar_contra">Confirmar contraseña</string>
+    <string name="crear_cuenta">Crear cuenta</string>
+    <string name="ya_tienes_una_cuenta">¿Ya tienes una cuenta?</string>
+    <string name="iniciar_sesi_n">Iniciar sesión</string>
+    <string name="no_tienes_una_cuenta">¿No tienes una cuenta?</string>
+    <string name="cerrar_sesi_n">Cerrar sesión</string>
 
 </resources>
