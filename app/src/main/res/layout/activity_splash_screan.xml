@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_login"
+    tools:context=".Splash_Screen">
+
+
+    <ImageView
+        android:id="@+id/logo_splash"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_above="@+id/texto_splash"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="91dp"
+        android:layout_marginBottom="86dp"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/texto_splash"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textCreated"
+        android:layout_marginBottom="171dp"
+        android:fontFamily="sans-serif-thin"
+        android:text="@string/alivebeats_music"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textCreated"
+        android:layout_marginBottom="101dp"
+        android:indeterminateTint="@color/black" />
+
+    <TextView
+        android:id="@+id/textCreated"
+        android:layout_width="384dp"
+        android:layout_height="22dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="19dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="68dp"
+        android:fontFamily="sans-serif-thin"
+        android:text="@string/created_by_aitor_amarildo_s_lor"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+
+
+
+
+</RelativeLayout>

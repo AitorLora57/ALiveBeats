@@ -9,7 +9,7 @@
     android:background="@drawable/fondo_login"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity">
+    tools:context=".activities.LoginActivity">
 
 
     <LinearLayout
@@ -30,7 +30,6 @@
             android:gravity="center"
             android:textColor="@color/black"
             android:textSize="22sp"
-            android:textStyle="bold"
             android:text="@string/bienvenida"
             android:paddingTop="8dp"
             android:fontFamily="sans-serif-thin"/>

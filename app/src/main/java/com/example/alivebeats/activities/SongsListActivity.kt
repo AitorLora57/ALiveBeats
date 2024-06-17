@@ -1,4 +1,4 @@
-package com.example.alivebeats
+package com.example.alivebeats.activities
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -18,9 +18,9 @@ class SongsListActivity : AppCompatActivity() {
     private lateinit var  songsListAdapter:  SongsListAdapter
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-         binding= ActivitySongsListBinding.inflate(layoutInflater)
+            binding= ActivitySongsListBinding.inflate(layoutInflater)
             setContentView(binding.root)
-         binding.nameTextView.text= category.name
+            binding.nameTextView.text= category.name
              Glide.with(binding.coverImageView).load(category.url)
                 .apply(
                     RequestOptions().transform(RoundedCorners(32)))

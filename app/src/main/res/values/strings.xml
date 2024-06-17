@@ -7,12 +7,20 @@
     <string name="reproduciendo">Reproduciendo:</string>
     <string name="bienvenida">Sumérgete en la música con ALiveBeats</string>
     <string name="correo_electr_nico">Correo electrónico</string>
-    <string name="contraseña">Contreseña</string>
+    <string name="contraseña">Contraseña</string>
     <string name="confirmar_contra">Confirmar contraseña</string>
     <string name="crear_cuenta">Crear cuenta</string>
     <string name="ya_tienes_una_cuenta">¿Ya tienes una cuenta?</string>
     <string name="iniciar_sesi_n">Iniciar sesión</string>
     <string name="no_tienes_una_cuenta">¿No tienes una cuenta?</string>
     <string name="cerrar_sesi_n">Cerrar sesión</string>
+    <string name="albums">Albums</string>
+    <string name="created_by_aitor_amarildo_s_lor">Created by Aitor Amarildo Só Lorá</string>
+    <string name="alivebeats_music">ALiveBeats Music</string>
+    <string name="correo_o_contrase_a_incorrecta">Correo o contraseña incorrecta</string>
+    <string name="email_no_v_lido">Email no válido</string>
+    <string name="m_nimo_6_caracteres">Mínimo 6 caracteres</string>
+    <string name="titulo">TITULO</string>
+    <string name="buscar">Buscar</string>
 
 </resources>

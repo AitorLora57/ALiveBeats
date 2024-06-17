@@ -8,7 +8,7 @@ import com.bumptech.glide.Glide
 import com.bumptech.glide.load.resource.bitmap.RoundedCorners
 import com.bumptech.glide.request.RequestOptions
 import com.example.alivebeats.MyExoPlayer
-import com.example.alivebeats.PlayerActivity
+import com.example.alivebeats.activities.PlayerActivity
 import com.example.alivebeats.databinding.ListaCancionesRecyclerRowBinding
 import com.example.alivebeats.modelo.Song
 import com.google.firebase.firestore.FirebaseFirestore
@@ -32,7 +32,7 @@ class SongsListAdapter(private val songIdList: List<String>):
                                 .into(binding.songCoverImageView)
                             binding.root.setOnClickListener {
                                 MyExoPlayer.starPlaying(binding.root.context,song)
-                                it.context.startActivity(Intent(it.context,PlayerActivity::class.java))
+                                it.context.startActivity(Intent(it.context, PlayerActivity::class.java))
                             }
                         }
                     }

@@ -1,4 +1,4 @@
-package com.example.alivebeats
+package com.example.alivebeats.activities
 
 import android.os.Bundle
 import android.view.View
@@ -6,6 +6,8 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.media3.common.Player
 import androidx.media3.exoplayer.ExoPlayer
 import com.bumptech.glide.Glide
+import com.example.alivebeats.MyExoPlayer
+import com.example.alivebeats.R
 import com.example.alivebeats.databinding.ActivityPlayerBinding
 
 class PlayerActivity : AppCompatActivity() {
@@ -44,15 +46,23 @@ class PlayerActivity : AppCompatActivity() {
     }
 
     override fun onDestroy() {
+        // Llama al método onDestroy de la superclase
         super.onDestroy()
+
+        // Remueve el listener del ExoPlayer, si existe
         exoPlayer?.removeListener(playerListener)
     }
-    fun showGif(show : Boolean){
-        if(show) {
-            binding.songGifImageView.visibility=View.VISIBLE
+
+    fun showGif(show: Boolean) {
+        // Verifica si se debe mostrar el GIF o no
+        if (show) {
+            // Si show es true, establece la visibilidad del ImageView como VISIBLE
+            binding.songGifImageView.visibility = View.VISIBLE
         } else {
-            binding.songGifImageView.visibility=View.INVISIBLE
+            // Si show es false, establece la visibilidad del ImageView como INVISIBLE
+            binding.songGifImageView.visibility = View.INVISIBLE
         }
     }
+
 
 }

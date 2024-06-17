@@ -20,11 +20,14 @@
         tools:text="Nombre cancion"
         android:textSize="18sp"
         android:textColor="@color/white"
+        android:fontFamily="sans-serif"
         android:id="@+id/song_title_text_view"/>
         <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
+            android:fontFamily="sans-serif-thin"
+
         tools:text="Artista cancion"
         android:textSize="18sp"
         android:textColor="@color/white"
