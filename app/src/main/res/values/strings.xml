@@ -22,5 +22,6 @@
     <string name="m_nimo_6_caracteres">Mínimo 6 caracteres</string>
     <string name="titulo">TITULO</string>
     <string name="buscar">Buscar</string>
+    <string name="que_canci_n_buscas">¿Qué canción buscas?</string>
 
 </resources>
